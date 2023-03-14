@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio práctico con selectores</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+</head>
+
+<body>
+    <h1>Ejercicio práctico con Tablas</h1>
+
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="3"><img src="img/120_ipod.png"></th>
+                <th colspan="2"><img src="img/100_ipod.png" width="100px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="fila">
+                <th class="primera">Capacidad</th>
+                <td class="gb">
+                    <p>2GB</p>
+                </td>
+                <td class="gb">
+                    <p>4GB</p>
+                </td>
+                <td class="gb">
+                    <p>8GB</p>
+                </td>
+                <td class="gb">
+                    <p>32GB</p>
+                </td>
+                <td class="gb">
+                    <p>2GB</p>
+                </td>
+            </tr>
+            <tr id="listas">
+                <th class="primera">Colores</th>
+                <th>Blanco</th>
+                <td>
+                    <ul>
+                        <li>Negro</li>
+                        <li>Rosa</li>
+                        <li>Dorado</li>
+                    </ul>
+                </td>
+                <th>Negro</th>
+                <td colspan="2">
+                    <ul>
+                        <li>Negro</li>
+                        <li>Blanco</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="primera">Pantalla</th>
+                <th colspan="3">3 pulgadas</th>
+                <th colspan="2">7 pulgadas</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class="primera">Tiempo de Carga</th>
+                <th colspan="3" rowspan="2">1 hora</th>
+                <th colspan="2" id="cinco">5 horas</th>
+            </tr>
+            <tr>
+                <th colspan="2">30 minutos para 75%</th>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+</body>
+
+</html>

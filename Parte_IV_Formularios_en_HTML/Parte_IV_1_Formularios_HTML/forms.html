@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form method="POST" action="destinarion.html">
+
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" />
+        </p>
+
+        <p>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" multiple>
+                <option value="Z">Zaragoza</option>
+                <option>Huesca</option>
+                <option>Teruel</option>
+            </select>
+        </p>
+
+        <p>
+            <textarea cols="10" rows="10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate corrupti ut earum, aliquam sint amet repellendus, vitae placeat repellat quis, ipsa qui. Velit placeat reiciendis tempore autem nostrum eaque?
+        </textarea>
+        </p>
+
+        <p>
+            <button type="button">Haz click aquí</button>
+
+        </p>
+
+        <p>
+            <button type="button" disabled><img width="100px" src="img/openwebinars-logo.jpg" /></button>
+        </p>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Inserta Nombre" required />
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" value="Pérez" readonly />
+            </p>
+
+            <p>
+                <label for="provincia">Provincia</label>
+                <select name="provincia">
+                    <optgroup label="Aragon">
+                        <option value="Z">Zaragoza</option>
+                        <option>Huesca</option>
+                        <option selected>Teruel</option>
+                    </optgroup>
+
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+
+        </fieldset>
+
+
+    </form>
+
+</body>
+
+</html>

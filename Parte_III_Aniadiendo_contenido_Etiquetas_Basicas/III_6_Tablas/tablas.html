@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablas en HTML</title>
+</head>
+
+<body>
+
+    <!-- Tabla simple, sólo filas y celdas -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Pepe</td>
+            <td>Pérez</td>
+            <td>Aquí</td>
+            <td>11111111</td>
+            <td>yosoy@pepe.es</td>
+        </tr>
+        <tr>
+            <td>Manuel</td>
+            <td>López</td>
+            <td>Allí</td>
+            <td>222222222</td>
+            <td>yosoy@manuel.es</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>Fernández</td>
+            <td>Mas allá</td>
+            <td>33333333</td>
+            <td>yosoy@maria.es</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>Gallardo</td>
+            <td>Mas aquí</td>
+            <td>44444444</td>
+            <td>yosoy@sara.es</td>
+        </tr>
+
+    </table>
+
+    <!-- Tabla con estructura completa -->
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: grey">
+            <col style="background-color: yellow">
+            <col style="background-color: green">
+        </colgroup>
+        <caption>Alumnos matriculados</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepe</td>
+                <td>Pérez</td>
+                <td>Aquí</td>
+                <td>11111111</td>
+                <td>yosoy@pepe.es</td>
+            </tr>
+            <tr>
+                <td>Manuel</td>
+                <td>López</td>
+                <td>Allí</td>
+                <td>222222222</td>
+                <td>yosoy@manuel.es</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Fernández</td>
+                <td>Mas allá</td>
+                <td>33333333</td>
+                <td>yosoy@maria.es</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+                <td>Gallardo</td>
+                <td>Mas aquí</td>
+                <td>44444444</td>
+                <td>yosoy@sara.es</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Pie de la tabla donde pongo más texto para que se vea como crecen</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    <table>
+        <caption>HORARIO DE CLASE CURSO 2018-2019</caption>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <th colspan="5">RECREO</th>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

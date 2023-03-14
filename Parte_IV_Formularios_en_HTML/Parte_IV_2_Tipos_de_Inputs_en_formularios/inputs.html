@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tipos de Inputs en Formularios</title>
+</head>
+
+<body>
+
+    <form method="post" action="destination.html">
+
+        <!--Lista de Inputs que son más o menos autoexplicativos-->
+        <!--
+            date
+            datetime-local
+            email
+            month
+            number
+            text
+            tel
+            time
+            url
+            week
+        -->
+        <p>
+            <label for="date">Fecha</label>
+            <input type="date" name="date" />
+        </p>
+
+        <p>
+            <label for="datetime">Fecha y Hora</label>
+            <input type="datetime-local" name="datetime" />
+        </p>
+
+        <p>
+            <label for="email">Correo</label>
+            <input type="email" name="email" />
+        </p>
+
+        <p>
+            <label for="mes">Mes</label>
+            <input type="month" name="mes" />
+        </p>
+
+        <p>
+            <label for="numero">Número</label>
+            <input type="number" name="numero" />
+        </p>
+
+        <p>
+            <label for="numero">Número</label>
+            <input type="number" name="numero" />
+        </p>
+
+        <p>
+            <label for="pass">Password</label>
+            <input type="password" name="password" />
+        </p>
+
+        <p>
+            <label for="texto">Texto</label>
+            <input type="text" name="text" />
+        </p>
+
+        <p>
+            <label for="telefono">Telçefono</label>
+            <input type="tel" name="telefono" />
+        </p>
+
+        <p>
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" />
+        </p>
+
+        <p>
+            <label for="url">Dirección Web</label>
+            <input type="url" name="url" />
+        </p>
+
+        <p>
+            <label for="semana">Semana</label>
+            <input type="week" name="semana" />
+        </p>
+
+        <p>
+            <label for="genero">Sexo</label>
+            <input type="radio" name="genero" value="masculino" />Hombre<br />
+            <input type="radio" name="genero" value="fememino" checked />Mujer<br />
+        </p>
+
+        <p>
+            <label for="dispositivos">Dispositivos electrónicos</label><br />
+            <input type="checkbox" name="dispositivos" value="pc" />PC<br />
+            <input type="checkbox" name="dispositivos" value="table" />Tableta<br />
+            <input type="checkbox" name="dispositivos" value="movil" />Móvil
+        </p>
+
+
+        <p>
+            <input list="titulo">
+
+            <datalist id="titulo">
+                <option value="Sin estudios">
+                <option value="Primarios">
+                <option value="Secundarios">
+                <option value="Universiarios">
+                <option value="Doctor">
+            </datalist>
+        </p>
+        <p>
+            <label for="rango">Rango</label>
+            <input type="range" name="rango" />
+        </p>
+
+        <p>
+            <label for="color">Color</label>
+            <input type="color" name="color" />
+        </p>
+
+        <p>
+            <label for="fichero"></label>
+            <input type="file" name="fichero" />
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+
+        <p>
+            <input list="editor">
+
+            <datalist id="editor">
+                <option value="Atom">
+                <option value="NotePad++">
+                <option value="VsCode">
+                <option value="Sublime">
+                <option value="Brackets">
+            </datalist>
+        </p>
+    </form>
+</body>
+
+</html>
